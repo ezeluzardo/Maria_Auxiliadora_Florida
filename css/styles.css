@@ -78,16 +78,18 @@ nav a {
   font-weight: 900;
 }
 nav a:hover {
-  background-color: rgba(217, 245, 125, 0.5019607843);
+  background-color: rgba(246, 242, 44, 0.671);
 }
 
 .btn {
-  background-color: rgba(204, 255, 39, 0.6705882353);
+  background-color: rgba(246, 242, 44, 0.671);
+  font-family: Arial, Helvetica, sans-serif;
+  color: #000;
 }
 
 .btn-outline-success:hover {
-  color: #6df314;
-  background-color: rgba(204, 255, 39, 0.6705882353);
+  color: #d6df62;
+  background-color: rgba(255, 212, 39, 0.671);
   border-color: #000000;
   color: #333;
   font-family: "Roboto", sans-serif;
@@ -161,7 +163,7 @@ main {
 
 /* Estilo del Footer */
 footer {
-  background: linear-gradient(to left, rgba(217, 245, 125, 0.5019607843) 50%, rgba(0, 0, 0, 0) 100%);
+  background: linear-gradient(to left, rgba(255, 253, 222, 0.9) 50%, rgba(0, 0, 0, 0) 100%);
   display: flex;
   padding: 10px 20px;
   justify-content: flex-end;
@@ -199,9 +201,11 @@ footer {
 
 /* BANNER EN INDEX*/
 #imagenbanner {
+  align-items: center;
   width: 100%;
   height: auto;
-  object-fit: cover;
+  
+  
 }
 
 #imagenbanner-mobile {
@@ -233,7 +237,7 @@ footer {
 }
 
 .boton-enviar {
-  background-color: rgba(204, 255, 39, 0.6705882353);
+  background-color: rgba(246, 242, 44, 0.671);
   border-color: #000;
   color: #333131;
   display: flex;
@@ -357,4 +361,4 @@ footer {
   padding-left: 20px;
 }
 
-/*# sourceMappingURL=styles.css.map */
+
