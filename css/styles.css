@@ -1,0 +1,360 @@
+@charset "UTF-8";
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+/* Encabezado del sitio */
+header {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin-top: auto;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+/* gradiente de color en el header */
+header {
+  background: linear-gradient(to bottom, rgba(248, 246, 212, 0.774) 0%, rgba(0, 0, 0, 0) 100%);
+}
+
+/* Animación de desvanecimiento del logo */
+#logo {
+  display: block;
+  margin: 0 auto;
+  width: 100%;
+  opacity: 0;
+  animation: fade-in 3s forwards;
+}
+
+@keyframes fade-in {
+  0% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+/* Animación de desvanecimiento solo al cargar la página */
+body {
+  animation: fade-in-page 2s forwards;
+}
+
+@keyframes fade-in-page {
+  0% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+/* BARRA DE NAVEGACION */
+nav {
+  padding: 10px;
+  width: 100%;
+  display: flex;
+  justify-content: center;
+}
+nav ul {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+nav li {
+  margin-right: 10px;
+}
+nav a {
+  text-decoration: none;
+  color: #6B6362;
+  padding: 8px;
+  border-radius: 4px;
+  font-size: 20px;
+  font-family: "Roboto", sans-serif;
+  font-weight: 900;
+}
+nav a:hover {
+  background-color: rgba(217, 245, 125, 0.5019607843);
+}
+
+.btn {
+  background-color: rgba(204, 255, 39, 0.6705882353);
+}
+
+.btn-outline-success:hover {
+  color: #6df314;
+  background-color: rgba(204, 255, 39, 0.6705882353);
+  border-color: #000000;
+  color: #333;
+  font-family: "Roboto", sans-serif;
+}
+
+/* Estilo de TEXTOS */
+h1 {
+  text-align: center;
+  font-size: 30px;
+  margin-top: 20px;
+  margin-bottom: 10px;
+  font-weight: 900;
+}
+
+h2 {
+  font-size: 25px;
+  text-align: center;
+  margin-top: 20px;
+  margin-bottom: 30px;
+  font-weight: 900;
+  font-family: "Ysabeau", sans-serif;
+}
+
+h3 {
+  font-size: 15px;
+  text-align: center;
+  margin-top: center;
+  font-family: "Ysabeau", sans-serif;
+}
+
+h4 {
+  color: rgb(74, 59, 35);
+}
+
+h5 {
+  font-size: 20px;
+  text-align: center;
+  margin-top: center;
+}
+
+p {
+  text-align: auto;
+  line-height: 1.5;
+  font-size: 20px;
+  margin-left: 10px;
+  margin-right: 10px;
+  font-family: "Ysabeau", sans-serif;
+  font-weight: 400;
+}
+
+article {
+  text-indent: 20px;
+  font-family: "Ysabeau", sans-serif;
+}
+
+li {
+  font-size: 17px;
+  margin-left: 10px;
+  margin-right: 10px;
+}
+
+/* Estilo del Main */
+main {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin-top: auto;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+/* Estilo del Footer */
+footer {
+  background: linear-gradient(to left, rgba(217, 245, 125, 0.5019607843) 50%, rgba(0, 0, 0, 0) 100%);
+  display: flex;
+  padding: 10px 20px;
+  justify-content: flex-end;
+  align-items: center;
+  width: auto;
+}
+
+/* Iconos de redes sociales */
+.social-icons {
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+}
+
+.social-icons a {
+  color: #333;
+  font-size: 25px;
+  margin-left: 10px;
+}
+
+/* boton flotante para ir al inicio */
+.irinicio {
+  display: flex;
+  color: #415d34;
+  text-decoration: none;
+  flex-direction: column;
+  align-items: center;
+  font-size: 18px;
+  font-weight: 900;
+  position: fixed;
+  bottom: 20px;
+  left: 20px;
+  border-radius: 10px;
+}
+
+/* BANNER EN INDEX*/
+#imagenbanner {
+  width: 100%;
+  height: auto;
+  object-fit: cover;
+}
+
+#imagenbanner-mobile {
+  width: 100%;
+  height: auto;
+}
+
+.card {
+  width: 18rem;
+  margin-bottom: 0.5rem;
+  margin-right: 0.5rem;
+}
+
+.container-form {
+  padding: 20px;
+  margin-bottom: 20px;
+  font-family: "Gill Sans", "Gill Sans MT", Calibri, "Trebuchet MS", sans-serif;
+  font-weight: 500;
+  padding: 20px;
+  padding-bottom: 20px;
+  border: 2px solid #999;
+  box-shadow: 0 0 8px rgba(0, 0, 0, 0.3);
+  transition: border-color 0.3s, box-shadow 0.3s;
+}
+
+.container-form:hover {
+  border-color: #999;
+  box-shadow: 0 0 8px rgba(0, 0, 0, 0.3);
+}
+
+.boton-enviar {
+  background-color: rgba(204, 255, 39, 0.6705882353);
+  border-color: #000;
+  color: #333131;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-weight: 900;
+  border-radius: 10px;
+}
+.boton-enviar:hover {
+  background-color: #5714f3;
+  border-color: #000;
+  color: #fff;
+}
+
+.preguntasfrecuentes {
+  padding: 1rem;
+  text-align: left;
+}
+
+.boton {
+  background-color: rgba(204, 255, 39, 0.6705882353);
+  border-color: #000;
+  color: #333131;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-weight: 900;
+  border-radius: 10px;
+}
+.boton:hover {
+  background-color: #6df314;
+  border-color: #000;
+  color: #fff;
+}
+
+.video-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 600px;
+  margin-top: 10px;
+  margin-bottom: 30px;
+}
+
+.video-container video {
+  max-width: 100%;
+  max-height: 100%;
+}
+
+.card {
+  border: 1px solid #ccc;
+  box-shadow: 2px 2px 4px rgba(0, 0, 0, 0.1);
+  transition: transform 0.3s, box-shadow 0.3s;
+}
+
+.card:hover {
+  transform: scale(1.05);
+  box-shadow: 4px 4px 8px rgba(0, 0, 0, 0.2);
+}
+
+.valoresnutricionales {
+  margin-top: 20px;
+  margin-bottom: 20px;
+  text-align: left;
+}
+
+.row {
+  justify-content: space-around;
+}
+
+.containerimg {
+  padding: 1em;
+  max-width: 500px;
+}
+
+.quienessomos {
+  padding: 1rem;
+}
+
+.boton {
+  background-color: rgba(204, 255, 39, 0.6705882353);
+  border-color: #000;
+  color: #333131;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-weight: 900;
+  border-radius: 10px;
+}
+.boton:hover {
+  background-color: #6df314;
+  border-color: #000;
+  color: #fff;
+}
+
+.container-tienda .card {
+  border: 1px solid #ccc;
+  box-shadow: 2px 2px 4px rgba(0, 0, 0, 0.1);
+  transition: transform 0.3s, box-shadow 0.3s;
+}
+
+.container-tienda .card:hover {
+  transform: scale(1.05);
+  box-shadow: 4px 4px 8px rgba(0, 0, 0, 0.2);
+}
+
+.video-container {
+  max-width: 800px;
+  margin-top: 10px;
+  margin-bottom: 10px;
+}
+
+.card-text {
+  text-align: justify;
+  padding-top: 10px;
+  padding-bottom: 10px;
+}
+
+.valoresnutricionales {
+  text-align: left;
+  padding-left: 20px;
+}
+
+/*# sourceMappingURL=styles.css.map */
