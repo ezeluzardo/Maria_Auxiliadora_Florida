@@ -201,11 +201,9 @@ footer {
 
 /* BANNER EN INDEX*/
 #imagenbanner {
-  align-items: center;
   width: 100%;
   height: auto;
-  
-  
+  object-fit: cover;
 }
 
 #imagenbanner-mobile {
