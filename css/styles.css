@@ -98,7 +98,7 @@ nav a:hover {
 /* Estilo de TEXTOS */
 h1 {
   text-align: center;
-  font-size: 30px;
+  font-size: 30x;
   margin-top: 20px;
   margin-bottom: 10px;
   font-weight: 900;
@@ -219,6 +219,7 @@ footer {
 
 .container-form {
   padding: 20px;
+  margin-top: 50px;
   margin-bottom: 20px;
   font-family: "Gill Sans", "Gill Sans MT", Calibri, "Trebuchet MS", sans-serif;
   font-weight: 500;
@@ -478,4 +479,10 @@ body{margin-top:20px;}
 .section-title .title {
     letter-spacing: 0.5px;
     font-size: 30px;
+}
+
+
+.container-mapa {
+  margin-top: 100px;
+  margin-bottom: 50px;
 }
